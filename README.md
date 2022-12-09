@@ -20,8 +20,9 @@ Within `flask-app/` folder, there are three parts: `src/`, `app.py/`, and `Docke
 
 ### src
 There are four new folders made inside src folder, which represent each corresponding wireframe.
-`one_pick/` is a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
-`ramen_on/` is a wireframe for Customer, where the user can get mukbang shows from the DB.
+1. `one_pick/` is a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
+1. `ramen_on/` is a wireframe for Customer, where the user can get mukbang shows from the DB.
+1. '`register_prod/` is a wireframe for Administrator, where the user can get registerd products, get companies of the registered products, and post a new ramen product to the DB.
 
 
 
