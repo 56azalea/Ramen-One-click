@@ -20,18 +20,17 @@ Within `flask-app/` folder, there are three parts: `src/`, `app.py/`, and `Docke
 
 ### src
 There are four new folders made inside src folder, which represent each corresponding wireframe.
-1. `one_pick/` is a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
-1. `ramen_on/` is a wireframe for Customer, where the user can get mukbang shows from the DB.
-1. '`register_prod/` is a wireframe for Administrator, where the user can get registerd products, get companies of the registered products, and post a new ramen product to the DB.
-1. `review/` is another wireframe for Customer, where the user can post a review for a product to the DB.
+1. `one_pick/` is a blueprint and a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
+1. `ramen_on/` is a blueprint and a wireframe for Customer, where the user can get mukbang shows from the DB.
+1. '`register_prod/` is a blueprint and a wireframe for Administrator, where the user can get registerd products, get companies of the registered products, and post a new ramen product to the DB.
+1. `review/` is a blueprint and a wireframe for Customer, where the user can post a review for a product to the DB.
+1. `__init__.py/` is a python file that contains some set up for the application. webapp is the connected user and full_db is the connected database. This file imports the various routes -- four wireframes mentioned above. Blueprints for each wireframe is registered, which have '/ramen_oneclick' as a common url prefix.
 
 
 
 ## How to setup and start the containers
 **Important** - you need Docker Desktop installed
  
-1. Create a file named `db_root_password.txt` in the `secrets/` folder and put inside of it the root password for MySQL. 
-1. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the `webapp` user. 
 1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
