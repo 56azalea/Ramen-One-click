@@ -26,6 +26,11 @@ There are four new folders made inside src folder, which represent each correspo
 1. `review/` is a blueprint and a wireframe for Customer, where the user can post a review for a product to the DB.
 1. `__init__.py/` is a python file that contains some set up for the application. webapp is the connected user and full_db is the connected database. This file imports the various routes -- four wireframes mentioned above. Blueprints for each wireframe is registered, which have '/ramen_oneclick' as a common url prefix.
 
+### `app.py/`
+app.py file creates the app object using the local host and port 4000.
+
+## `docker-compose.yml/`
+This yml file configures the webserver container as well as the mySQL container. The webserver container maps the host port to 8001 to container port 4000. The mySQL container maps the host port 3200 to container port 3306. It uses the db and db root passwords from `secrets/` folder.
 
 
 ## How to setup and start the containers
