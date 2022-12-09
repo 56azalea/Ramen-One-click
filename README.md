@@ -15,6 +15,15 @@ full_db is the name of our database. Password is required to access, which are r
 Tables are created inside full_db, which represent each user type (Customer Service, Customer, Administrator), necessary objects (Ramen Company, Ramen Product, Mukbang Creator, Mukbang Show, Post), as well as the relationships between components mentioned earlier. There are 11 tables total.
 After each table creation, there is INSERT INTO method, which adds example data into the corresponding table. For any attributes that are foreign keys, they refer to their parent keys.
 
+## Flask app
+Within `flask-app/` folder, there are three parts: `src/`, `app.py/`, and `Dockerfile/`.
+
+### src
+There are four new folders made inside src folder, which represent each corresponding wireframe.
+`one_pick/` is a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
+`ramen_on/` is a wireframe for Customer, where the user can get mukbang shows from the DB.
+
+
 
 ## How to setup and start the containers
 **Important** - you need Docker Desktop installed
@@ -25,8 +34,5 @@ After each table creation, there is INSERT INTO method, which adds example data 
 1. Build the images with `docker compose build`
 1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
 
-## For setting up a Conda Web-Dev environment:
-
-1. `conda create -n webdev python=3.9`
-1. `conda activate webdev`
-1. `pip install flask flask-mysql flask-restful cryptography flask-login`
+## Video Link
+To watch our video, go to this link: 
