@@ -1,8 +1,11 @@
 # MySQL + Flask Boilerplate Project
 ### by Serin Jeon & Dahye Jin
 
-## Introduction
-Ramen One-click is an application that shows a collection of every kind of ramen. People can purchase different kinds of ramen via this application. Then, those who have bought and tried ramen can post a rating for the product. These ratings can be viewed by anyone who uses Ramen One-click. By collating the users’ ratings, the overall popularity and rate for each product will also be calculated and displayed on the application. Also, there are other functionalities that the user can enjoy. One of them is ramen Mukbang shows by Mukbang creators, featuring specific ramen products registered on the application. Others include ramen-related events and recommendation posts.
+(elevator pitch)
+
+This repo contains a boilerplate setup for spinning up 2 docker containers: 
+1. A MySQL 8 container for obvious reasons
+1. A Python Flask container to implement a REST API
 
 ## User
 webapp is the user, who is granted with all privileges on our database.
@@ -29,15 +32,18 @@ app.py file creates the app object using the local host and port 4000.
 ## `docker-compose.yml/`
 This yml file configures the webserver container as well as the mySQL container. The webserver container maps the host port to 8001 to container port 4000. The mySQL container maps the host port 3200 to container port 3306. It uses the db and db root passwords from `secrets/` folder.
 
-## 
 
-
-## How to setup and start the containers
+## How to use ngrok to connect our database with AppSmith
 **Important** - you need Docker Desktop installed
  
 1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
-1. Build the images with `docker compose build`
-1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
+2. Build the images with `docker compose build`
+3. Start the containers with `docker compose up`. To run in detached mode, run `docker compose up -d`. 
+4. Add a new terminal and and type 'ngrok http 8001'.
+5. The ngrok window will give a Forwarding link. Copy the link.
+5. Go to AppSmith and click Flask API under Datasources.
+6. Click edit on the top right corner and paste the copied link from ngrok to the URL.
+7. The databse is now connected with AppSmith.
 
 ## Video Link
 To watch our video, go to this link: 
