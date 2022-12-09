@@ -6,7 +6,7 @@ Ramen One-click is an application that shows a collection of every kind of ramen
 ## User
 webapp is the user, who is granted with all privileges on our database.
 
-## Database (`ramen_db.sql/`)
+## Database (`ramen_db.sql`)
 full_db is the name of our database. Password is required to access, which are recorded in `secrets/` folder.
 Tables are created inside full_db, which represent each user type (Customer Service, Customer, Administrator), necessary objects (Ramen Company, Ramen Product, Mukbang Creator, Mukbang Show, Post), as well as the relationships between components mentioned earlier. There are 11 tables total.
 After each table creation, there is INSERT INTO method, which adds example data into the corresponding table. For any attributes that are foreign keys, they refer to their parent keys.
