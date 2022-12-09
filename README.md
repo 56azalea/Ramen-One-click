@@ -12,20 +12,20 @@ Tables are created inside full_db, which represent each user type (Customer Serv
 After each table creation, there is INSERT INTO method, which adds example data into the corresponding table. For any attributes that are foreign keys, they refer to their parent keys.
 
 ## Flask app
-Within `flask-app/` folder, there are three parts: `src/`, `app.py/`, and `Dockerfile/`.
+Within `flask-app/` folder, there are three parts: `src/`, `app.py`, and `Dockerfile`.
 
 ### src
 There are four new folders made inside src folder, which represent each corresponding wireframe.
-1. `one_pick/` is a blueprint and a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
-1. `ramen_on/` is a blueprint and a wireframe for Customer, where the user can get mukbang shows from the DB.
-1. '`register_prod/` is a blueprint and a wireframe for Administrator, where the user can get registerd products, get companies of the registered products, and post a new ramen product to the DB.
-1. `review/` is a blueprint and a wireframe for Customer, where the user can post a review for a product to the DB.
-1. `__init__.py/` is a python file that contains some set up for the application. webapp is the connected user and full_db is the connected database. This file imports the various routes -- four wireframes mentioned above. Blueprints for each wireframe is registered, which have '/ramen_oneclick' as a common url prefix.
+1. `one_pick` is a blueprint and a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
+1. `ramen_on` is a blueprint and a wireframe for Customer, where the user can get mukbang shows from the DB.
+1. '`register_prod` is a blueprint and a wireframe for Administrator, where the user can get registerd products, get companies of the registered products, and post a new ramen product to the DB.
+1. `review` is a blueprint and a wireframe for Customer, where the user can post a review for a product to the DB.
+1. `__init__.py` is a python file that contains some set up for the application. webapp is the connected user and full_db is the connected database. This file imports the various routes -- four wireframes mentioned above. Blueprints for each wireframe is registered, which have '/ramen_oneclick' as a common url prefix.
 
-### `app.py/`
+### `app.py`
 app.py file creates the app object using the local host and port 4000.
 
-## `docker-compose.yml/`
+## `docker-compose.yml`
 This yml file configures the webserver container as well as the mySQL container. The webserver container maps the host port to 8001 to container port 4000. The mySQL container maps the host port 3200 to container port 3306. It uses the db and db root passwords from `secrets/` folder.
 
 
