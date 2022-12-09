@@ -35,7 +35,7 @@ This yml file configures the webserver container as well as the mySQL container.
 1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
 2. Build the images with `docker compose build`
 3. Start the containers with `docker compose up`. To run in detached mode, run `docker compose up -d`. 
-4. Add a new terminal and and type 'ngrok http 8001'.
+4. Add a new terminal and and type `ngrok http 8001`.
 5. The ngrok window will give a Forwarding link. Copy the link.
 5. Go to AppSmith and click Flask API under Datasources.
 6. Click edit on the top right corner and paste the copied link from ngrok to the URL.
