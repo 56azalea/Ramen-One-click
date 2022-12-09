@@ -1,11 +1,7 @@
 # MySQL + Flask Boilerplate Project
 ### by Serin Jeon & Dahye Jin
 
-(elevator pitch)
-
-This repo contains a boilerplate setup for spinning up 2 docker containers: 
-1. A MySQL 8 container for obvious reasons
-1. A Python Flask container to implement a REST API
+Ramen One-click is an application that shows a collection of every kind of ramen. People can purchase different kinds of ramen via this application. Then, those who have bought and tried ramen can post a rating for the product. These ratings can be viewed by anyone who uses Ramen One-click. By collating the users’ ratings, the overall popularity and rate for each product will also be calculated and displayed on the application. Also, there are other functionalities that the user can enjoy. One of them is ramen Mukbang shows by Mukbang creators, featuring specific ramen products registered on the application. Others include ramen-related events and recommendation posts.
 
 ## User
 webapp is the user, who is granted with all privileges on our database.
