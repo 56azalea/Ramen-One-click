@@ -42,4 +42,4 @@ This yml file configures the webserver container as well as the mySQL container.
 7. The databse is now connected with AppSmith.
 
 ## Video Link
-To watch our video, go to this link: https://drive.google.com/file/d/1lcg3HRr-Ry3YSGQ85Mo9JUXV-J4lM2eH/view?usp=share_link
+To watch our video, go to this link: https://drive.google.com/file/d/1y5tgk_kEVZaE9yPDyA3hxNrZ_b_fs_IV/view?usp=share_link
