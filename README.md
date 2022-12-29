@@ -39,7 +39,7 @@ This yml file configures the webserver container as well as the mySQL container.
 5. The ngrok window will give a Forwarding link. Copy the link.
 5. Go to AppSmith and click Flask API under Datasources.
 6. Click edit on the top right corner and paste the copied link from ngrok to the URL.
-7. The databse is now connected with AppSmith.
+7. The database is now connected with AppSmith.
 
 ## Video Link
 To watch our video, go to this link: https://drive.google.com/file/d/1y5tgk_kEVZaE9yPDyA3hxNrZ_b_fs_IV/view?usp=share_link
