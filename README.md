@@ -14,7 +14,7 @@ After each table creation, there is INSERT INTO method, which adds example data 
 ## Flask app
 Within `flask-app/` folder, there are three parts: `src/`, `app.py`, and `Dockerfile`.
 
-### src
+### `src`
 There are four new folders made inside src folder, which represent each corresponding wireframe.
 1. `one_pick` is a blueprint and a wireframe for Customer Service, where that user can get public posts and make a new post in the DB. 
 1. `ramen_on` is a blueprint and a wireframe for Customer, where the user can get mukbang shows from the DB.
